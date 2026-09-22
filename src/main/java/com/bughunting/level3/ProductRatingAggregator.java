@@ -25,7 +25,7 @@ public class ProductRatingAggregator {
         double totalWeightedScore = 0.0;
         int totalWeight = 0;
 
-        // Asumimos que siempre vienen listas cargadas y con la misma cantidad de opiniones
+        // Asumimos que siempre vienen listas cargadas y con la misma cantidad de elementos, según la especificación del método.
         for (int i = 0; i < ratings.size(); i++) {
             totalWeightedScore += ratings.get(i) * weights.get(i);
             totalWeight += weights.get(i);
